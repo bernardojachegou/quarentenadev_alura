@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <button id="botao" onclick="contadorNumeros()">Conta números pares</button>
+    <script>
+
+        function contadorNumeros() {
+            contador = 0;
+            numeroUsuario = parseInt(prompt("Um número qualquer"))
+            while (contador <= numeroUsuario) {
+                document.write(contador + '<br>');
+                contador = contador + 2; // incrementa de dois em dois
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <button id="botao" onclick="contaOlimpiadas()">Contador de olimpíadas</button>
+    <script>
+
+        function contaOlimpiadas() {
+            var primeiraOlimp = 1896;
+            anoAtual = parseInt(prompt("Digite o ano virgente..."))
+
+            while (primeiraOlimp <= anoAtual) {
+                document.write(primeiraOlimp + '<br>')
+                primeiraOlimp = primeiraOlimp + 4
+            }
+        }
+
+    </script>
+</body>
+
+</html>

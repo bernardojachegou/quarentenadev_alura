@@ -1,0 +1,14 @@
+#Quarentena Dev#
+Conteúdo:
+1. Cálculos de batimento cardíaco
+2. Cálculo de IMC
+3. Cálculo de combustível
+4. Cálculo de App de carro
+5. Estilização de div com CSS
+5.1 Pokebola usando box-shadow do CSS
+6. Meses do ano utilizando if
+6.1 Teste de condição utilizando variável
+7. Sorteio com while e if
+8. Contador de Olimpíadas utilizando while
+8.1 Contador de números pares (Testando condições)
+9. Cálculadora com inputs

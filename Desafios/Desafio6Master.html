@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        * {
+            font-family: monospace;
+        }
+
+        html {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgb(91, 194, 212);
+        }
+
+        body {
+            width: 21.88em;
+            height: 36.44em;
+
+            max-width: 90%;
+            max-height: 90%;
+
+            font-size: 1.25em;
+            padding: 1em;
+
+            border: 1px solid lightgrey;
+            box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .25);
+            background: white;
+        }
+
+
+        h2 {
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        img {
+            width: 48px;
+            min-height: 48px;
+            border: 2px solid white;
+            vertical-align: middle;
+
+            background-color: lightgrey;
+        }
+
+        p {
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="tagh1"> Nome: </h1>
+
+        <h2> Ficha </h2>
+        <ul id="lista">
+        </ul>
+    </div>
+</body>
+    
+<script>
+    Nome = prompt("Nome completo")
+    document.getElementById("tagh1").innerHTML = "Nome:" + Nome
+    nascimento = prompt("Data de nascimento")
+    temcondicao = confirm("Tem condição pré-existente")
+
+    if (temcondicao) { 
+        estadodesaude = "Sim",
+        comSem = "Precisa de "
+        }
+    // false==false resultado: true
+    if (temcondicao == false) { 
+        estadodesaude = "Nao",
+        comSem = "Não precisa de " 
+        }
+
+    document.getElementById("lista").innerHTML = 
+        `
+        <li> Data Nascimento: ${nascimento} </li>
+        <li> Idade: 23 anos </li>
+        <li> Tem condição pré-existente: ${estadodesaude} </li>
+        <li> ${comSem} acompanhamento médico</li>
+        `
+</script>
+</html>

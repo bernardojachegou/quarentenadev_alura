@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+    <style type="text/css">
+        body {
+            background-color: green;
+        }
+    </style>
+<body>
+    <script>
+        // 2 + km * 1,4 (reais) + min *0,26 (centavos) (fórmula da conta)
+        distancia = prompt("Qual a distância da corrida? (km)");
+        tempo = prompt("Qual a duração da corrida? (min)");
+        valorCorrida = 2 + (distancia * 1.4) + (tempo * 0.26)
+        document.write('<h1>Sua corrida deu: </h1>' + '<h2>' + 'R$ ' + valorCorrida.toFixed(2) + '</h2>');
+
+    </script>
+</body>
+
+</html>
